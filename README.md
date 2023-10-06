@@ -61,7 +61,7 @@ Run `norm_split_train_test.py`.
 
 File paths in the code reference the normalized dataset and its labels.  
 
-This will generate `train`/`test.csv` in the "origin" directory.  
+This will generate `train.csv` and `test.csv` in the "origin" directory.  
 
 2. Generating Adversarial Samples:
 
