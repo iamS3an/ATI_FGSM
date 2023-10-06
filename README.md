@@ -75,7 +75,7 @@ Use `main_seq.py` to generate adversarial samples.
 
 The output files will be in various "eps" value folders within the "origin" directory.  
 
-If you set the status parameter in main_seq.py to "ATI," files will be generated in the "ATI" directory.  
+If you set the status parameter in `main_seq.py` to "ATI," files will be generated in the "ATI" directory.  
 
 Ensure that you have previously calculated ATI values for the "origin" dataset and placed them in the "ATI" directory before running.  
 
