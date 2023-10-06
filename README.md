@@ -6,11 +6,14 @@
 
 ### IOT23 Dataset:
 
-### Download Link: [Here](https://drive.google.com/file/d/1T1pCAKYZYwzPH_8fL0Rz4gYrO0NPzif4/view?usp=sharing) 
+### Download Link: [Here](https://drive.google.com/file/d/1T1pCAKYZYwzPH_8fL0Rz4gYrO0NPzif4/view?usp=sharing)  
+
 ### Combination:
 
 Combine all files from the official website.  
+
 Select 13 features.  
+
 > Note: The "tunnel_parents" feature was not used in the experiments.  
 
 * Benign:  
@@ -32,13 +35,16 @@ For files with more than 100,000 entries:
 
 Randomly select 36,000 entries from each of the 14 files.  
 
-Total malicious records: Approximately 1 million, maintaining a 1:1 ratio with benign records.
+Total malicious records: Approximately 1 million, maintaining a 1:1 ratio with benign records.  
+
 ### CICIDS2017 Dataset:
 
-### Download Link: [Here](https://drive.google.com/drive/folders/14KaYkeGKWTrW7f0AR5cOAUEVT-51DDFV?usp=drive_link) 
+### Download Link: [Here](https://drive.google.com/drive/folders/14KaYkeGKWTrW7f0AR5cOAUEVT-51DDFV?usp=drive_link)  
+
 ### Combination:
 
-Select files: `Wednesday-workingHours.pcap_ISCX.csv`, `Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv`, and `Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv`.
+Select files: `Wednesday-workingHours.pcap_ISCX.csv`, `Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv`, and `Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv`.  
+
 ### Data Preprocessing:
 
 Run `preprocess_raw.py` to generate `CIC_data.csv` and `CIC_label.csv`.  
@@ -83,7 +89,9 @@ It will perform training and detection.
 
 After generating adversarial samples and calculating their ATI values, you can execute `recovery.py`.  
 
-### 5. Adversarial Training to Distinguish Original Labels (In CICIDS2017, this experiment wasn't conducted.):
+### 5. Adversarial Training to Distinguish Original Labels:   
+
+> Note: This experiment wasn't conducted in the part of CICIDS2017.
 
 Execute `atk_eval_seq.py` to read original and generated adversarial samples.  
 
