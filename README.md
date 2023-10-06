@@ -1,5 +1,7 @@
 # Attack Tendency Index based Adversarial Training Model for Defending Intrusion Detection Against Gradient based Adversarial Attacks
 
+ A repository for our research on "Adversarial Training for Network Intrusion Detection." This repository provides code and resources related to our work aimed at defending against adversarial attacks in neural network-based intrusion detection systems.  
+
 ### Experiment process record (2023/9/26): [Here](https://drive.google.com/file/d/1Rscp5CSS1KwQIVxskUlUuwoMs-IhNGMa/view?usp=sharing) 
 
 ## Dataset Selection:
