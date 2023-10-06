@@ -30,14 +30,17 @@ Total benign records: 531,346.
 
 * Malicious:  
 
-
 Select all records with less than 100,000 entries.  
 
 For files with more than 100,000 entries:  
 
 Randomly select 36,000 entries from each of the 14 files.  
 
-Total malicious records: Approximately 1 million, maintaining a 1:1 ratio with benign records.  
+Total malicious records: 533,506.
+
+* All: 1,064,852.  
+
+Approximately maintaining a 1:1 ratio between benign and malicious records.  
 
 ### CICIDS2017 Dataset:
 
