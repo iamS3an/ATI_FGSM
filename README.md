@@ -55,7 +55,7 @@ Run `normalize.py` to generate `CIC_normalize.csv`.
 
 ## Getting Started
 
-1. Initialization:
+### 1. Initialization:
 
 Run `norm_split_train_test.py`.  
 
@@ -63,7 +63,7 @@ File paths in the code reference the normalized dataset and its labels.
 
 This will generate `train.csv` and `test.csv` in the "origin" directory.  
 
-2. Generating Adversarial Samples:
+### 2. Generating Adversarial Samples:
 
 Use `main_seq.py` to generate adversarial samples.  
 
@@ -73,22 +73,23 @@ If you set the status parameter in main_seq.py to "ATI," files will be generated
 
 Ensure that you have previously calculated ATI values for the "origin" dataset and placed them in the "ATI" directory before running.  
 
-3. Adversarial Sample Detection:
+### 3. Adversarial Sample Detection:
 
 Execute `adv_det_seq.py` to read the original and generated adversarial samples.  
 
 It will perform training and detection.  
 
-4. Recovery:
+### 4. Recovery:  
+
 After generating adversarial samples and calculating their ATI values, you can execute `recovery.py`.  
 
-5. Adversarial Training to Distinguish Original Labels (In CICIDS2017, this experiment wasn't conducted.):
+### 5. Adversarial Training to Distinguish Original Labels (In CICIDS2017, this experiment wasn't conducted.):
 
 Execute `atk_eval_seq.py` to read original and generated adversarial samples.  
 
 It will perform training and detection.  
 
-6. How to conduct the part of ATI experiment:
+### 6. How to conduct the part of ATI experiment:
 
 Run `preCT_adv_det_seq.py` to generate files in the "adv_det_preATI" directory.  
 
