@@ -65,7 +65,9 @@ Run `normalize.py` to generate `CIC_normalize.csv`.
 
 Run `norm_split_train_test.py`.  
 
-File paths in the code reference the normalized dataset and its labels.  
+First, it will create folders that will be used later in the program execution.
+
+The files to be splited are the ones that have just been normalized. 
 
 This will generate `train.csv` and `test.csv` in the "origin" directory.  
 

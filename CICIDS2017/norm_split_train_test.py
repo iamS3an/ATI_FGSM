@@ -11,6 +11,16 @@ os.environ['PYTHONHASHSEED']=str(seed_value)
 random.seed(seed_value)
 np.random.seed(seed_value)
 
+eps_list = [0.05, 0.1, 0.01, 0.02]
+part_list = ['origin', 'ATI', 'adv_det_preATI', 'adv_det_doneATI']
+
+for part in part_list:
+    for eps in eps_list:
+        try:
+            os.makedirs(f"{part}/{eps}")
+        except FileExistsError:
+            pass
+
 origin_data = pd.read_csv('CIC_normalize.csv', header=None, sep=',', comment='#', low_memory=False)
 origin_label = pd.read_csv('CIC_label.csv', names=['label'], comment='#', low_memory=False)
 
