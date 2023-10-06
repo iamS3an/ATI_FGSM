@@ -88,7 +88,7 @@ Ensure that you have previously calculated ATI values for the "origin" dataset a
 
 ### 3. Adversarial Sample Detection:
 
-Execute `adv_det_seq.py` to read the original and generated adversarial samples.  
+Execute `adv_det_seq.py` to load the original and generated adversarial samples.  
 
 It will perform training and detection.  
 
@@ -100,9 +100,9 @@ After generating adversarial samples and calculating their ATI values, you can e
 
 > Note: This experiment wasn't conducted in the part of CICIDS2017.
 
-Execute `atk_eval_seq.py` to read original and generated adversarial samples.  
+Execute `atk_eval_seq.py` to load the original and generated adversarial samples with their original labels.  
 
-It will perform training and detection.  
+It will perform training and evaluating the original labels.  
 
 ### 6. How to conduct the part of ATI experiment:
 
@@ -110,7 +110,7 @@ Run `preCT_adv_det_seq.py` to generate files in the "adv_det_preATI" directory.
 
 Calculate ATI values for these files and place them in the "adv_det_doneATI" directory.  
 
-Finally, execute the corresponding _ATI files for both adversarial detection and training.
+Finally, execute the corresponding files named with "_ATI" for both adversarial detection and training.
 
 ## Contact
 Feel free to contact me at:  
